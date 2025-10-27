@@ -1,0 +1,22 @@
+# Viewing the Latest Dashboard Changes
+
+The finance dashboard implementation lives in this Git repository. To review or reuse the modified code, you have two primary options:
+
+1. **Inspect the committed diff locally**
+   ```bash
+   git show HEAD
+   ```
+   This command prints the most recent commit that replaced the starter template with the dashboard UI, including the updated Angular component files.
+
+   For a file-by-file view, you can run:
+   ```bash
+   git diff HEAD^ HEAD -- src/app/app.html
+   git diff HEAD^ HEAD -- src/app/app.ts
+   git diff HEAD^ HEAD -- src/app/app.scss
+   ```
+   Adjust the file paths as needed to inspect other files.
+
+2. **Open the project in VS Code**
+   Clone the repository (or copy the project directory) and open it in VS Code. The committed files already contain the implemented dashboard, so you do **not** need to manually paste code. Instead, simply open the files (for example `src/app/app.html`, `src/app/app.scss`, and `src/app/app.ts`) to see the latest version.
+
+If you push this repository to a remote service such as GitHub, the same commit will be available there. On the web interface you can browse the files or open the commit to view the diff.
